@@ -14,8 +14,7 @@ Github Action to configure k8s HorizontalPodAutoscaler for a pod.
 
 This action is designed to work seamlessly with the Kubernetes cluster created by the Terraform modules contained in [Cookiecutter Tutor Open edX Production Devops Tools](https://github.com/lpm0073/cookiecutter-openedx-devops).
 
-## Usage:
-
+## Usage
 
 ```yaml
 name: Example workflow
@@ -79,7 +78,7 @@ jobs:
 
       # This action, using all default values
       - name: Configure auto scaling for cms worker pod
-        uses: openedx-actions/tutor-k8s-configure-autoscaling-policy@v0.0.1
+        uses: openedx-actions/tutor-k8s-configure-autoscaling-policy@v0.0.2
         with:
           pod-name: cms-worker
 ```
