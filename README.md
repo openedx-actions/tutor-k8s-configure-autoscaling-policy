@@ -27,11 +27,11 @@ jobs:
 
     steps:
       # required antecedent
-      - uses: actions/checkout@v3.5.0
+      - uses: actions/checkout
 
       # required antecedent
       - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v2
+        uses: aws-actions/configure-aws-credentials
         with:
           aws-access-key-id: ${{ secrets.THE_NAME_OF_YOUR_AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.THE_NAME_OF_YOUR_AWS_SECRET_ACCESS_KEY }}
@@ -39,7 +39,7 @@ jobs:
 
       # install and configure tutor and kubectl
       - name: Initialize environment
-        uses: openedx-actions/tutor-k8s-init@v1.0.8
+        uses: openedx-actions/tutor-k8s-init
         with:
           namespace: openedx-prod
 
@@ -54,7 +54,7 @@ jobs:
 
       # This action, overriding default values
       - name: Configure auto scaling for lms pod
-        uses: openedx-actions/tutor-k8s-configure-autoscaling-policy@v0.0.1
+        uses: openedx-actions/tutor-k8s-configure-autoscaling-policy
         with:
           pod-name: lms
           cpu-threshold: 30
@@ -63,7 +63,7 @@ jobs:
 
       # This action, overriding default values
       - name: Configure auto scaling for lms worker pod
-        uses: openedx-actions/tutor-k8s-configure-autoscaling-policy@v0.0.1
+        uses: openedx-actions/tutor-k8s-configure-autoscaling-policy
         with:
           pod-name: lms-worker
           cpu-threshold: 30
@@ -72,13 +72,13 @@ jobs:
 
       # This action, using all default values
       - name: Configure auto scaling for cms pod
-        uses: openedx-actions/tutor-k8s-configure-autoscaling-policy@v0.0.1
+        uses: openedx-actions/tutor-k8s-configure-autoscaling-policy
         with:
           pod-name: cms
 
       # This action, using all default values
       - name: Configure auto scaling for cms worker pod
-        uses: openedx-actions/tutor-k8s-configure-autoscaling-policy@v0.0.2
+        uses: openedx-actions/tutor-k8s-configure-autoscaling-policy
         with:
           pod-name: cms-worker
 ```
