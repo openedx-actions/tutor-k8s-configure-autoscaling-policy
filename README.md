@@ -1,6 +1,6 @@
 <img src="https://avatars.githubusercontent.com/u/40179672" width="75">
 
-[![Tests](https://github.com/openedx-actions/tutor-k8s-configure-autoscaling-policy@v0/actions/workflows/testRelease.yml/badge.svg)](https://github.com/openedx-actions/tutor-k8s-configure-autoscaling-policy@v0/actions)
+[![Tests](https://github.com/openedx-actions/tutor-k8s-configure-autoscaling-policy/actions/workflows/testRelease.yml/badge.svg)](https://github.com/openedx-actions/tutor-k8s-configure-autoscaling-policy/actions)
 [![Open edX Discussion](https://img.shields.io/static/v1?logo=discourse&label=Forums&style=flat-square&color=000000&message=discuss.openedx.org)](https://discuss.openedx.org/)
 [![docs.tutor.overhang.io](https://img.shields.io/static/v1?logo=readthedocs&label=Documentation&style=flat-square&color=blue&message=docs.tutor.overhang.io)](https://docs.tutor.overhang.io)
 [![hack.d Lawrence McDaniel](https://img.shields.io/badge/hack.d-Lawrence%20McDaniel-orange.svg)](https://lawrencemcdaniel.com)<br/>
